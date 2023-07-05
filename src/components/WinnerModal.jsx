@@ -8,12 +8,12 @@ const WinnerModal = ({ winner, resetGame }) => {
 
   return (
     <section className="absolute h-full w-full top-0 left-0 grid place-items-center bg-black/50">
-      <div className="bg-[#000] border rounded-xl  h-[300px] w-[300px] grid place-content-center space-y-8">
+      <div className="bg-[#00160f] border rounded-xl  h-[300px] w-[300px] grid place-content-center space-y-8">
         <h2 className="text-white text-2xl font-medium m-auto">{winnerText}</h2>
         {winner && <Turn>{winner}</Turn>}
         <button
           onClick={resetGame}
-          class="flex w-52 items-center justify-center rounded-2xl border-b-4 border-b-[#cdcdcd] bg-[#ffffff] py-4 text-sm font-bold tracking-wider text-black transition duration-150 ease-in-out active:translate-y-1 active:border-b-transparent"
+          class="flex w-52 items-center justify-center rounded-2xl border-b-4 border-b-[#cdcdcd] bg-[#ffffff] py-4 text-sm font-bold tracking-wider text-[#00160f] transition duration-150 ease-in-out active:translate-y-1 active:border-b-transparent"
         >
           JUGAR OTRA VEZ
           <svg
@@ -21,7 +21,7 @@ const WinnerModal = ({ winner, resetGame }) => {
             fill="none"
             stroke="currentColor"
             strokeWidth="1.5"
-            ariaHidden="true"
+            aria-hidden="true"
             className="ml-2 w-6"
             viewBox="0 0 24 24"
           >

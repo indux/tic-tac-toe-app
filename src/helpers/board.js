@@ -1,6 +1,6 @@
-import { WINNER_COMBOS } from "../helpers/constans";
+import { WINNER_COMBOS } from "./constans";
 
-const checkWinner = (boardToCheck) => {
+const checkWinnerFrom = (boardToCheck) => {
   for (const combo of WINNER_COMBOS) {
     const [a, b, c] = combo;
     if (
@@ -18,4 +18,4 @@ const checkEndGame = (newBoard) => {
   return newBoard.every((square) => square !== null);
 };
 
-export { checkWinner, checkEndGame };
+export { checkWinnerFrom, checkEndGame };

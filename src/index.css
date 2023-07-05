@@ -11,6 +11,9 @@ body {
   place-content: center;
   min-height: 100vh;
   font-family: system-ui;
-  background-color: #000;
+  background-color: #00160f;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
