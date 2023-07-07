@@ -4,7 +4,7 @@ import { Turn } from "./Turn";
 const WinnerModal = ({ winner, resetGame }) => {
   if (winner === null) return null;
 
-  const winnerText = winner === false ? "Empate" : "Ganador:";
+  const winnerText = winner === false ? "Draw" : "Winner:";
 
   return (
     <section className="absolute h-full w-full top-0 left-0 grid place-items-center bg-black/50">
@@ -13,9 +13,9 @@ const WinnerModal = ({ winner, resetGame }) => {
         {winner && <Turn>{winner}</Turn>}
         <button
           onClick={resetGame}
-          class="flex w-52 items-center justify-center rounded-2xl border-b-4 border-b-[#cdcdcd] bg-[#ffffff] py-4 text-sm font-bold tracking-wider text-[#00160f] transition duration-150 ease-in-out active:translate-y-1 active:border-b-transparent"
+          className="flex w-52 items-center justify-center rounded-2xl border-b-4 border-b-[#cdcdcd] bg-[#ffffff] py-4 text-sm font-bold tracking-wider text-[#00160f] transition duration-150 ease-in-out active:translate-y-1 active:border-b-transparent"
         >
-          JUGAR OTRA VEZ
+          PLAY AGAIN
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

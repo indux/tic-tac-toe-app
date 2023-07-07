@@ -57,7 +57,7 @@ const App = () => {
       </section>
 
       <div className="grid place-items-center mb-7">
-        <h2 className="text-3xl font-bold text-white">Es turno de:</h2>
+        <h2 className="text-3xl font-bold text-white">It's the turn of:</h2>
       </div>
 
       <section className="grid grid-cols-2">
